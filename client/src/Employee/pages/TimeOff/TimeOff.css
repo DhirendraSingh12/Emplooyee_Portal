@@ -1,0 +1,209 @@
+ .timeoff-calendar-container {
+  width: 100%;
+  background-color: rgba(234, 234, 243, 0.919);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeoff-year-selector {
+  padding-left: 15px;
+  font-weight: bold;
+  display: flex;
+  padding: 20px 26px 10px 26px ;
+  justify-content: left;
+}
+
+.timeoff-year-selector span {
+  padding-left: 12px;
+  font-weight: bold;
+}
+.select-year{
+  width: 50%;
+  max-width: 410px;
+}
+.maindiv {
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 10px 0px 10px 20px;
+  width: 100%;
+}
+
+.timeoff-month-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  gap: 15px;
+  width:85%
+}
+
+.timeoffbutton {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 10px;
+  width: 15%;
+}
+.timeoffAddbutton{
+  width: 60px;
+}
+.timeoffbutton .Bookleavebutton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Bookleavebutton {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.timeoff-month-container {
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  background-color: #fff;
+  width:24%;
+  
+  
+}
+
+.timeoff-month-container h2 {
+  padding: 10px 10px 0px 10px ;
+  margin: 0;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.timeoff-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.timeoff-day-name.Sat,
+.timeoff-day-name.Sun {
+  background-color: #add8e66b;
+  
+}
+
+.timeoff-day-name {
+  text-align: center;
+  color: gray;
+}
+
+.timeoff-day {
+  padding: 6px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.timeoff-day.today {
+  padding-top: 10px;
+  background-color: #69b3ccb0;
+  font-weight: bold;
+  color: #004085;
+  cursor: pointer;
+}
+
+.timeoff-day.empty {
+  visibility: hidden;
+}
+
+
+
+.timeoff-day.sunday,
+.timeoff-day.saturday {
+  background-color: #add8e66b !important;
+  font-weight: bold;
+}
+
+.timeoff-day.past,
+.timeoff-day.future {
+  font-weight: bold;
+  color: gray;
+  padding: 10px;
+}
+
+.timeoff-day.leave .timeoff-umbrella-icon {
+  font-size: 1.5em;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.timeoff-day.leave .timeoff-day-number {
+  visibility: hidden;
+}
+
+.timeoff-day.leave .timeoff-umbrella-icon {
+  font-size: 1.2em;
+}
+
+.timeoff-day.leave:hover .timeoff-umbrella-icon {
+  display: none;
+}
+
+.timeoff-day.leave:hover .timeoff-day-number {
+  visibility: visible;
+}
+
+
+.timeoff-total-work {
+  position: absolute;
+  top: 190px;
+  right: 85px;
+  font-size: 21px;
+  font-weight: 400;
+  color: #000;
+}
+@media (max-width: 1389px){
+  .timeoff-month-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+.timeoff-month-container{
+  width: auto;
+}
+}
+
+@media (max-width: 768px) {
+  .maindiv {
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+  }
+
+  .timeoff-month-grid,
+  .timeoffbutton {
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .timeoff-month-container{
+    width: 100%;
+    padding: 0px;
+  }
+  .select-year{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .timeoff-year-selector{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+

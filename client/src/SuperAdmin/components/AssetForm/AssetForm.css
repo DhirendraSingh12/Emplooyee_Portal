@@ -1,0 +1,35 @@
+.AssestFrom-Container {
+  max-width: 800px;
+  width: 100%; 
+  margin: 0 auto; 
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.dialog {
+  max-width: 100%;
+}
+.form-button-employee {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-button-employee {
+  background: whitesmoke;
+  color: red;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.save-button-employee {
+  background: #90caf9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+

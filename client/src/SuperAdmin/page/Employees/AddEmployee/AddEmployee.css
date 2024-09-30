@@ -1,0 +1,165 @@
+.AdminAdd-employee {
+  margin-top: 15px;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.AdminAdd-employee h2 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.Admindropzone.dragging {
+  border-color: #000;
+}
+
+.Adminupload-icon {
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+.Admindropzone p {
+  margin: 10px 0;
+}
+
+.Admindropzone button {
+  margin-top: 10px;
+}
+
+.Admindropzone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  /* background-color: #f9f9f9cd; */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+}
+.Admindropzone.dragging {
+  background-color: #e0e0e0;
+}
+.Admindropzone .uploadfilebutton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(25, 164, 134);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.Adminuploadfilebutton{
+  font-weight: 500;
+  color: gray;
+  cursor: pointer;
+  padding: 10px;
+}
+.Adminuploadfilebutton{
+  background-color:#add8e6ee ;
+  color: black;
+}
+.Admindropzone .Adminuploadfilebutton input[type="file"] {
+  display: none;
+}
+
+.Admindropzone p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+.icon-wrapper{
+  width: 250px;
+}
+
+.Admindropzone .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.file-uploaded-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 10px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.file-uploaded-header .admin-upload-bulk-files label{
+  font-weight: bold;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.Admin-upload-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.Admin-upload-image-addemployee {
+ /* border: 1px solid black; */
+ border-radius: 10px;
+}
+
+.Admin-upload-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .admin-upload-bulk-files {
+  display: flow;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-start;
+} */
+
+/* .Upload-bulk-emp {
+  margin-bottom: 18px;
+  font-weight: bold;
+} */
+.field-bulk{
+  margin-top: 2px;
+  display: flex;
+  align-items: flex-start;
+  padding: 7px;
+}
+.AdminAdd-button-employee {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.Admin-cancel-button-employee {
+  background: whitesmoke;
+  color: red;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.Admin-save-button-employee {
+  background: #90caf9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 800px){
+  .AdminAdd-employee h2 {
+    font-weight: 600;
+    font-size: 17px;
+  }
+}
+

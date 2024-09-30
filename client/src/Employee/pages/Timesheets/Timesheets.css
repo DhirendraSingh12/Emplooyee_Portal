@@ -1,0 +1,204 @@
+.TimeSheet-table-container {
+  width: auto;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px 15px 15px 15px;
+}
+.TimeSheet-tablebody {
+  margin-top: 12px;
+}
+th {
+  text-align: left;
+  background-color: #f0eef471;
+  color: #1a1b1f;
+  font-weight: 500;
+  border-bottom: 1px solid #e4e4e4;
+   /* border: 1px solid black;
+  font-size: 16px;
+  width: 10%;
+  min-width: 10%; */
+}
+td {
+  border-bottom: 1px solid #ddd;
+  /* border: 1px solid black;
+  width: 10%;
+  min-width: 10%; */
+  background-color: #fdfbff;
+}
+
+.TimeSheet-table-data {
+  width: 100%;
+  border-spacing: 0;
+}
+.TimeSheet-table-data thead tr {
+  background-color: #fdfbff;
+}
+
+.TimeSheet-table-data td {
+  font-size: 14px;
+  text-align: left;
+  padding: 5px;
+}
+.TimeSheet-table-data td button {
+  font-size: 20px;
+}
+.TimeSheet-Action-DataButon {
+  /* display: flex; */
+  align-items: center;
+  gap: 10px;
+}
+.TimeSheet-edit-button {
+  color: lightblue;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.TimeSheet-Text-delete {
+  color: lightsalmon;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.TimeSheet-edit-button:hover {
+  background-color: #dae1f3;
+  color: lightblue;
+  transform: scale(1.01);
+}
+.TimeSheet-Text-delete:hover {
+  background-color: #dae1f3;
+  color: lightsalmon;
+  transform: scale(1.01);
+}
+
+.TimeSheet-download-button-table-data {
+  display: flex;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+.TimeSheet-download-button-table-data:hover {
+  background-color: #dae1f3;
+}
+.TimeSheet-pagination-table-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fdfbff;
+  padding: 12px 1px;
+}
+.TimeSheet-DeletebtnView {
+  width: auto;
+  height: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.TimeSheet-row-checkbox {
+  padding: 0;
+  cursor: pointer;
+}
+.TimeSheet-custom-form-control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.timesheetth {
+  padding-left: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.timesheetsubmit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Timesheet-submit {
+  width: 150px;
+  text-align: center;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #6674a9;
+  margin-top: 20px;
+}
+
+.custom-select {
+  width: 100px; /* Adjust width as needed */
+}
+
+.custom-form-control {
+  width: auto; /* To ensure FormControl does not stretch beyond its content */
+  height: auto;
+}
+
+
+@media (max-width: 1100px) {
+  .TimeSheet-table-data thead {
+    display: none;
+  }
+
+  .TimeSheet-table-data tr,
+  .TimeSheet-table-data td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .TimeSheet-table-data tbody tr td {
+    position: relative;
+    text-align: right;
+    padding-right: 10px;
+    padding: 10px;
+    height: 70px;
+  }
+
+  .TimeSheet-table-data td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 12px;
+    text-align: left;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+  }
+  .TimeSheet-table-data td::before {
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media (max-width: 458px){
+  .TimeSheet-table-data tbody tr td {
+    width: 320px;
+  }
+
+}
+@media only screen and (max-width: 1100px) {
+  .TimeSheet-custom-form-control {
+    width: 50%;
+  }
+
+  .placeholder {
+    margin-right: 250px;
+  }
+
+  .out-date-calender {
+    display: grid;
+    justify-content: right;
+  }
+}

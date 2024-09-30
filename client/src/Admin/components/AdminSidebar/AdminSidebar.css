@@ -1,0 +1,189 @@
+.Admin-sidebar {
+  color: white;
+  transition: width 0.5s ease;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+.Admin-sidebar-popup {
+  transition: width 0.5s ease;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  z-index: 2000;
+  display: none;
+}
+
+.Admin-popup-sidebar1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  transition: opacity 0.5s ease;
+}
+.Admin-popup-sidebar1 img {
+  width: auto;
+  height: 25px;
+}
+.Admin-close-icon-sidebar {
+  margin-right: 6px;
+  font-size: 30px;
+  padding: 0px 6px;
+  border-radius: 4px;
+}
+.Admin-close-icon-sidebar:hover {
+  background-color: #dae1f3;
+}
+.Admin-sidebar-popup.open {
+  display: flex;
+}
+.Admin-popup-slider3 {
+  padding-top: 15px;
+}
+
+.Admin-sidebar-content {
+  transition: width 0.5s ease;
+  background-color: white;
+  width: 80%;
+  max-width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.Admin-sidebar-header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Admin-toggleMenu {
+  display: flex;
+  padding: 1px 10px;
+  cursor: pointer;
+}
+/* .Admin-dropdown-menu {
+  padding-left: 10px;
+} */
+
+.Admin-slider1 {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.Admin-slider1 img {
+  width: auto;
+  height: 25px;
+}
+.Admin-slider1 .LogoImage {
+  width: auto;
+  height: 22px;
+}
+
+.Admin-MiniLogo {
+  width: 40px;
+  height: 40px;
+}
+
+.Admin-slider2 {
+  transition: opacity 0.5s ease;
+}
+
+.Admin-slider3 {
+  display: block;
+  transition: opacity 0.5s ease;
+  padding-top: 100px;
+}
+
+.Admin-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* .Admin-list-items {
+  display: flex;
+  align-items: center;
+  padding: 6px 5px;
+  text-decoration: none;
+  gap: 15px;
+  width: 100%;
+  cursor: pointer;
+} */
+/* .Admin-list-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 5px;
+  text-decoration: none;
+  gap: 15px;
+  width: 100%;
+} */
+.Admin-list-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 5px;
+  text-decoration: none;
+  gap: 15px;
+  width: 100%;
+}
+
+
+
+.Admin-list-item-text {
+  color: black;
+  cursor: pointer;
+}
+.Admin-list-item-texts {
+  padding-right: 42px;
+  color: black;
+  cursor: pointer;
+}
+.Admin-ImageIcons {
+  width: auto;
+  height: 35px;
+  cursor: pointer;
+}
+.Admin-dropdown-icon {
+  color: black;
+  width: 25px;
+}
+
+.Admin-toggleMenu .Admin-ImageIcon {
+  color: rgb(0, 0, 0);
+  padding: 4px 4px;
+  height: 25px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+@media (max-width: 1000px), (max-height: 720px) {
+  .Admin-sidebar {
+    display: none;
+  }
+
+  .Admin-menu-button {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px), (min-height: 721px) {
+  .Admin-menu-button {
+    display: none;
+  }
+}
+@media (max-width: 1000px), (max-height: 1050px) {
+  .Admin-sidebar {
+    width: 300px;
+  }
+}

@@ -1,0 +1,26 @@
+
+
+
+/* Table styles */
+.admin-timesheet-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.admin-timesheet-container table th,
+.admin-timesheet-container table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.admin-timesheet-container table th {
+  background-color: #007bff;
+  color: white;
+}
+
+
+
+

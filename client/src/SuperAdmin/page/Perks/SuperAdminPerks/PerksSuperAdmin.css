@@ -1,0 +1,148 @@
+.perks-table-container {
+  width: auto;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px 15px 15px 15px;
+}
+.perks-tablebody {
+  margin-top: 12px;
+}
+.perks-table-data th {
+  text-align: left;
+  background-color: #f0eef471;
+  color: #1a1b1f;
+  font-weight: 500;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 16px;
+  width: 5%;
+  min-width: 5%;
+  height: 55px;
+}
+.perks-table-data td {
+  border-bottom: 1px solid #ddd;
+  width: 5%;
+  min-width: 5%;
+  height: 60px;
+  background-color: #fdfbff;
+}
+.perk-image {
+  width: 20%;
+}
+
+.perks-table-data {
+  width: 100%;
+  border-spacing: 0;
+}
+.perks-table-data thead tr {
+  background-color: #fdfbff;
+}
+
+.perks-table-data td {
+  font-size: 14px;
+  text-align: left;
+}
+
+.perks-table-data td button {
+  font-size: 20px;
+}
+.perks-edit-button {
+  color: lightblue;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.perks-Text-delete {
+  color: lightsalmon;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.perks-edit-button:hover {
+  background-color: #dae1f3;
+  color: lightblue;
+  transform: scale(1.01);
+}
+.perks-Text-delete:hover {
+  background-color: #dae1f3;
+  color: lightsalmon;
+  transform: scale(1.01);
+}
+
+.perks-download-button-table-data {
+  display: flex;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+.perks-download-button-table-data:hover {
+  background-color: #dae1f3;
+}
+.perks-pagination-table-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fdfbff;
+  padding: 12px 1px;
+}
+.perks-DeletebtnView {
+  width: auto;
+  height: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.row-checkbox {
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .perks-table-data thead {
+    display: none;
+  }
+
+  .perks-table-data tr,
+  .perks-table-data td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .perks-table-data tbody tr td {
+    position: relative;
+    text-align: right;
+    padding-right: 10px;
+    padding: 10px;
+    height: 50px;
+  }
+
+  .perks-table-data td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 12px;
+    text-align: left;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+  }
+  .perks-table-data td::before {
+    display: flex;
+    text-align: center;
+  }
+  .perk-image {
+    width: 20px;
+  }
+}

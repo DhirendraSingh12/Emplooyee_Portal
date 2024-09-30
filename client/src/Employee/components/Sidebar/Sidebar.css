@@ -1,0 +1,229 @@
+.sidebar {
+  color: white;
+  transition: width 0.5s ease;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  /* z-index: 1000; */
+}
+
+
+.sidebar-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 270px; /* Width of the sidebar */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  z-index: 1000;
+
+  /* Set initial state to hidden on the left */
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* When sidebar is open, make it visible and slide in */
+.sidebar-popup.open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.popup-sidebar1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.popup-sidebar1 img {
+  width: auto;
+  height: 25px;
+}
+
+
+.close-icon-sidebar {
+  margin-right: 6px;
+  font-size: 30px;
+  padding: 0px 6px;
+  border-radius: 4px;
+}
+.close-icon-sidebar:hover {
+  background-color: #dae1f3;
+}
+.sidebar-popup.open {
+  display: flex;
+}
+.popup-slider3 {
+  padding-top: 15px;
+}
+
+
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: whitesmoke;
+}
+.dropdown-icon{
+  width: 30px;
+}
+.toggleMenu.LogoImage {
+  display: flex;
+  justify-content: space-between;
+}
+.toggleMenu {
+  display: flex;
+  padding: 1px 10px;
+  cursor: pointer;
+}
+
+/* .slider1 {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  transition: opacity 0.5s ease;
+} */
+
+.slider1 img {
+  width: auto;
+  height: 30px;
+}
+.slider1 .LogoImage {
+  width: auto;
+  height: 22px;
+}
+
+.MiniLogo {
+  width: 40px;
+  height: 40px;
+}
+
+
+.slider2 {
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+  align-items: center;
+}
+
+.slider3 {
+  display: block;
+  transition: opacity 0.5s ease;
+  padding-top: 100px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.list-items {
+  display: flex;
+  align-items: center;
+  padding: 6px 5px;
+  text-decoration: none;
+  gap: 10px;
+
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  margin: 6px 4px;
+  gap: 10px;
+  text-decoration: none;
+  width: 100%;
+
+}
+.dropdown-menu{
+ margin-left: 4px;
+}
+
+
+
+
+.list-item.active {
+  background-color: #6674a9; /* Light background for active state */
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 2px 5px rgba(0, 0, 0, 0.2); /* Box-shadow effect */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for shadow and background */
+}
+
+.list-item-text.active {
+  color: white;
+  cursor: pointer;
+}
+
+.list-item-text {
+  color: black;
+  cursor: pointer;
+}
+
+.ImageIcons {
+  width: auto;
+  height: 35px;
+  cursor: pointer;
+}
+
+.toggleMenu .ImageIcon {
+  color: rgb(0, 0, 0);
+  padding: 4px 4px;
+  height: 25px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.toggleMenu .ImageIcons:active {
+  background-color: #dae1f3;
+  transform: scale(1.02);
+}
+.list-item-texts {
+  color: black;
+  cursor: pointer;
+  display: flex;
+  padding-right: 75px;
+}
+
+.dropdown-icon{
+  padding-right: 10px;
+  margin-left: -49px;
+}
+
+
+
+
+
+@media (max-width: 900px), (max-height: 720px) {
+  .sidebar {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+ 
+}
+
+@media (min-width: 900px), (min-height: 721px) {
+  .menu-button {
+    display: none;
+  }
+  
+} 
+
+

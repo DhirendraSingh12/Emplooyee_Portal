@@ -1,0 +1,184 @@
+.emp-details-container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: contents;
+}
+
+.inp-details-form {
+  width: 100%;
+  min-height: 60vh;
+  background-color: lavender;
+  padding: 15px;
+}
+
+.inp-details-form span {
+  font-weight: 600;
+  /* padding: 12px; */
+  display: block;
+}
+
+.input-details {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.input-details label {
+  display: block;
+}
+
+.input-details input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.check-mark-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 3px;
+}
+.check-mark-icon {
+  width: auto;
+  height: 30px;
+}
+
+.check-mark-btn p {
+  margin-left: 8px;
+}
+
+.bulk-text-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  margin-top: 80px;
+  text-align: center; /* Center-align the text */
+}
+
+.bulk-icon {
+  margin-bottom: 10px; /* Space between the icon and the text */
+}
+
+.import-icon {
+  width: auto;
+  height: 60px;
+}
+
+.bulk-text p {
+  white-space: pre-line; /* Allows line breaks from the text */
+}
+
+/* If you want to control the line break at a specific point */
+.bulk-text p::after {
+  content: "";
+  display: block; /* Forces a new line */
+  margin-top: 8px; /* Adds some space between lines if needed */
+}
+/* The `check-` in the code snippet you provided is used as
+a prefix for certain elements and classes. Specifically,
+it is used for the following: */
+
+.bulk-import-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bulk-import-btn {
+  color: rgba(88, 80, 130);
+  font-weight: 600;
+  border: 2px solid rgba(88, 80, 130);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bulk-import-btn:hover {
+  background-color: rgba(88, 80, 130);
+  color: white;
+}
+
+.bulk-imported-data {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.multi-header-emp-details {
+  display: flex;
+  color: rgba(88, 80, 130);
+  background-color: lavender;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.multi-header-emp-details p:first-child {
+  background-color: rgba(88, 80, 130, 1);
+  color: white;
+  padding: 6px 0px 6px 0px;
+  padding-left: 12px;
+  padding-right: 23px;
+  border-radius: 0px 20px 20px 0px;
+  font-weight: 600;
+}
+
+.multi-header-emp-details p:nth-child(2),
+.multi-header-emp-details p:nth-child(3) {
+  background-color: rgba(235, 247, 255);
+  padding: 6px 0px 6px 0px;
+  padding-left: 12px;
+  padding-right: 23px;
+  border-radius: 0px 20px 20px 0px;
+  font-weight: 600;
+}
+
+.back-arrow-section{
+  display: flex;
+  align-items: center;
+  padding: 2px 0px 5px 0px;
+}
+
+.company-title-header {
+  display: flex;
+  justify-content: space-between;
+  /* Optional: You can add some padding if needed */
+  padding: 0 10px; /* Adjust the value as needed */
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.full-week-time{
+  padding: 9px;
+}
+
+.full-week-time p{
+  font-size: 18px;
+  padding: 3px;
+  font-weight: 600;
+}
+
+/* Add this in your CSS file to adjust Snackbar styles */
+.MuiSnackbar-root {
+  top: 500px; /* Adjusts the distance from the top */
+  right: 500px; /* Adjusts the distance from the right */
+  z-index: 1301;
+}
+
+

@@ -1,0 +1,143 @@
+.Admintable-container {
+  width: auto;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px 15px 15px 15px;
+}
+.Admintablebody {
+  margin-top: 12px;
+}
+.Admintable-data th {
+  text-align: left;
+  background-color: #f0eef471;
+  color: #1a1b1f;
+  font-weight: 500;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 16px;
+  width: 5%;
+  min-width: 5%;
+  height: 55px;
+}
+.Admintable-data td {
+  border-bottom: 1px solid #ddd;
+  width: 5%;
+  min-width: 5%;
+  /* height: 60px; */
+  background-color: #fdfbff;
+}
+
+.Admintable-data {
+  width: 100%;
+  border-spacing: 0;
+}
+.Admintable-data thead tr {
+  background-color: #fdfbff;
+}
+
+.Admintable-data td {
+  font-size: 14px;
+  text-align: left;
+}
+
+
+.Admintable-data td button {
+  font-size: 20px;
+}
+.Adminedit-button {
+  color: lightblue;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.AdminText-delete {
+  color: lightsalmon;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.Adminedit-button:hover {
+  background-color: #dae1f3;
+  color: lightblue;
+  transform: scale(1.01);
+}
+.AdminText-delete:hover {
+  background-color: #dae1f3;
+  color: lightsalmon;
+  transform: scale(1.01);
+}
+
+.Admindownload-button-table-data {
+  display: flex;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+.Admindownload-button-table-data:hover {
+  background-color: #dae1f3;
+}
+.Adminpagination-table-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fdfbff;
+  padding: 12px 1px;
+}
+.AdminDeletebtnView {
+  width: auto;
+  height: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.row-checkbox {
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 1265px) {
+  .Admintable-data thead {
+    display: none;
+  }
+
+  .Admintable-data tr,
+  .Admintable-data td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .Admintable-data tbody tr td {
+    position: relative;
+    text-align: right;
+    padding-right: 10px;
+    padding: 10px;
+    height: 50px;
+  }
+
+  .Admintable-data td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 12px;
+    text-align: left;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+  }
+  .Admintable-data td::before {
+    display: flex;
+    text-align: center;
+  }
+}

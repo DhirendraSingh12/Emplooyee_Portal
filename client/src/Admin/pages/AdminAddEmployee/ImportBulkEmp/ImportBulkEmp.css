@@ -1,0 +1,50 @@
+.import-emp-table-container{
+    width: auto;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 15px 15px 15px;
+}
+
+.import-emp-box{
+    margin-top: 15px;
+    background-color: lavender;
+
+}
+
+.import-box-title{
+    font-size: large;
+}
+
+.downloaded-templated-btn{
+    color:  rgba(0, 87, 173);
+    font-weight: 600 !important;
+    padding: 8px;
+    border: 2px solid rgba(0, 87, 173) !important;
+}
+
+.downloaded-templated-btn:hover{
+    background-color: rgba(0, 87, 173) !important;
+    color: #fff;
+}
+
+.bulk-import-icon{
+    width: auto;
+    height: 70px;
+}
+.import-bulk-emp{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.browse-bulk-file{
+    color: rgba(0, 87, 173) !important;
+    border: 2px solid rgba(0, 87, 173) !important;
+    font-weight: 600 !important;
+}
+
+.browse-bulk-file:hover{
+    color: #fff !important;
+    background-color: rgba(0, 87, 173) !important;
+}

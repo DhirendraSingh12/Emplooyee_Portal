@@ -1,0 +1,45 @@
+
+   .SuperAdmin-layout {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; 
+    overflow: hidden;
+  }
+  
+  .SuperAdmin-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(230, 230, 250, 0.521);
+    background-image: url("../../../../public/assets/images/Home.png");
+    position: relative;
+  }
+  
+  .SuperAdmin-main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  }
+  
+  
+  
+  .SuperAdmin-content {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 30px;
+    z-index: 1;
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .SuperAdmin-content {
+      padding: 10px;
+    }
+  }
+  

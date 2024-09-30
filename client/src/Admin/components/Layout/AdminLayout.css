@@ -1,0 +1,45 @@
+.Admins-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Admins-main-content {
+  /* flex-grow: 1; */
+  flex: 1;
+  display: flex;
+  /* width: 100%; */
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(230, 230, 250, 0.521);
+  background-image: url("../../../../public/assets/images/Home.png");
+  position: relative;
+  background-position-x: center;
+}
+
+.Admins-main-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensures the overlay is below the content */
+}
+
+
+.Admins-content {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 30px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 420px) {
+  .Admins-content {
+    padding: 10px;
+  }
+}

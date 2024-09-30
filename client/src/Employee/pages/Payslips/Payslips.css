@@ -1,0 +1,155 @@
+.PaySlip-table-container {
+    width: auto;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 15px 15px 15px;
+  }
+  .PaySlip-tablebody {
+    margin-top: 12px;
+  }
+  th {
+    text-align: left;
+    background-color: #f0eef471;
+    color: #1a1b1f;
+    font-weight: 500;
+    border-bottom: 1px solid #e4e4e4;
+     /* border: 1px solid black;
+    font-size: 16px;
+    width: 10%;
+    min-width: 10%; */
+  }
+  td {
+    border-bottom: 1px solid #ddd;
+    /* border: 1px solid black;
+    width: 10%;
+    min-width: 10%; */
+    background-color: #fdfbff;
+  }
+  
+  .PaySlip-table-data {
+    width: 100%;
+    border-spacing: 0;
+  }
+  .PaySlip-table-data thead tr {
+    background-color: #fdfbff;
+  }
+  
+  .PaySlip-table-data td {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px;
+  }
+  .PaySlip-table-data td button {
+    font-size: 20px;
+  }
+  .PaySlip-Action-DataButon {
+    /* display: flex; */
+    align-items: center;
+    gap: 10px;
+  }
+  .PaySlip-edit-button {
+    color: lightblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  .PaySlip-Text-delete {
+    color: lightsalmon;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  .PaySlip-edit-button:hover {
+    background-color: #dae1f3;
+    color: lightblue;
+    transform: scale(1.01);
+  }
+  .PaySlip-Text-delete:hover {
+    background-color: #dae1f3;
+    color: lightsalmon;
+    transform: scale(1.01);
+  }
+  
+  .PaySlip-download-button-table-data {
+    display: flex;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+  }
+  .PaySlip-download-button-table-data:hover {
+    background-color: #dae1f3;
+  }
+  .PaySlip-pagination-table-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fdfbff;
+    padding: 12px 1px;
+  }
+  .PaySlip-DeletebtnView {
+    width: auto;
+    height: 20px;
+    cursor: pointer;
+    align-items: center;
+  }
+  .PaySlip-row-checkbox {
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1100px) {
+    .PaySlip-table-data thead {
+      display: none;
+    }
+  
+    .PaySlip-table-data tr,
+    .PaySlip-table-data td {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    .PaySlip-table-data tbody tr td {
+      position: relative;
+      text-align: right;
+      padding-right: 10px;
+      padding: 10px;
+      height: 70px;
+      height: 50px;
+    }
+  
+    .PaySlip-table-data td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 12px;
+      text-align: left;
+      font-weight: bold;
+      align-items: center;
+      display: flex;
+    }
+    .PaySlip-table-data td::before {
+      display: flex;
+      text-align: center;
+    }
+  }
+  
+  /* @media (max-width: 458px){
+    .PaySlip-table-data tbody tr td {
+      width: 322px;
+    }
+  
+  } */

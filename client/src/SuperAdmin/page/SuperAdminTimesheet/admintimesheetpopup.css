@@ -1,0 +1,115 @@
+.super-timesheet-table-container {
+    width: 100%;
+    background-color: lavender;
+    border-radius: 0 0 10px 10px;
+    padding: 20px; /* Slightly increased padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+}
+
+.super-timesheet-tablebody {
+    margin-top: 12px;
+}
+
+.super-timesheet-tablebody th {
+    text-align: left;
+    background-color: #f0eef471;
+    color: #1a1b1f;
+    font-weight: 600; /* Increased font weight for better readability */
+    border-bottom: 2px solid #e4e4e4; /* Thicker border for distinction */
+    padding: 10px; /* Added padding for better spacing */
+}
+
+.super-timesheet-tablebody td {
+    border-bottom: 1px solid #ddd;
+    background-color: #fdfbff;
+    padding: 15px; /* Added padding for better spacing */
+}
+
+.super-timesheet-table-data {
+    width: 100%;
+    border-collapse: collapse; /* Use collapse instead of spacing */
+}
+
+.super-timesheet-table-data thead tr {
+    background-color: #fdfbff;
+}
+
+.super-timesheet-table-data thead {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px;
+}
+
+/* Additional styling for links */
+.super-timesheet-tablebody td a {
+    text-decoration: none;
+}
+
+.super-timesheet-tablebody td a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+
+.dropdown-icon {
+    position: relative;
+  }
+  
+  .dropdown-popup {
+    position: absolute;
+    top: 90px; /* adjust the top position to match the icon's height */
+    left: 90%;
+    transform: translateX(0);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-popup-content {
+    max-width: 200px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown-menu .accept-dropdown-menu{
+    color: green;
+    font-weight: 600;
+  }
+
+  .dropdown-menu .pending-dropdown-menu{
+    color: gold;
+    font-weight: 600;
+  }
+
+  .dropdown-menu .reject-dropdown-menu{
+    color: red;
+    font-weight: 600;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .super-timesheet-tablebody th, .super-timesheet-tablebody td {
+        font-size: 12px; /* Decrease font size for smaller screens */
+    }
+}

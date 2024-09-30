@@ -1,0 +1,123 @@
+.payslips-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dae1f3;
+  padding: 5px 10px;;
+}
+
+.payslips-actions {
+  display: flex;
+}
+.input-text {
+  padding: 7px;
+  display: flex;
+  gap: 10px;
+}
+.input-text h2 {
+  font-weight: 600;
+  color: #5b626b;
+  font-size: 20px;
+}
+.payslips-actions {
+  gap: 14px;
+  padding: 5px 4px;
+  color: black;
+  cursor: pointer;
+}
+.checkboxcommonheader{
+  display: none;
+  color: black;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.date-filter-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+  padding: 0px;
+}
+
+.payslips-actions button:hover {
+  background-color: #303f9f;
+}
+
+.xlsxIcon img {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.text-edit {
+  color: rgba(152, 152, 183, 0.434);
+}
+.text-delete {
+  color: red;
+}
+.Icon-css {
+  background-color: lavender;
+  color: black;
+  padding: 7px 13px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.Icon-css:hover {
+  background-color: #0099cc;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.Icon-css:active {
+  background-color: #0077aa;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 800px) {
+  .payslips-header {
+    display: flex;
+    padding: 8px;
+  }
+  .payslips-actions {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .input-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .checkboxcommonheader{
+    display: block;
+  }
+}
+@media only screen and (max-width: 524px) {
+  .input-text h2 {
+    font-weight: 600;
+    color: black;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 524px) {
+  .Icon-css {
+    font-size: 18px;
+  }
+  .checkboxcommonheader{
+    font-size: 14px;
+  }
+}

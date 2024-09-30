@@ -1,0 +1,141 @@
+.my-perks-container {
+  background-color: white;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.Perks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #b6ace433;
+  gap: 20px;
+}
+
+.Perks-field-group {
+  padding: 10px;
+  border: 2px solid #6674a9;
+  font-weight: 600;
+  width: 150px;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+}
+.FilterPerks {
+  padding: 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.FilterPerks h2 {
+  margin: 0;
+  font-weight: 600;
+  color: black;
+}
+.FilterPerks .FilterButton {
+  padding: 5px 20px;
+  background-color: #6674a9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+.FilterButton.active {
+  background-color: #5264a8;
+  color: #fff;
+  border-color: #5163a4;
+}
+.FilterPerks .FilterButton:hover {
+  background-color: #5264a9;
+}
+
+.Perks-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Perks-content .box {
+  width: 49%;
+  border-radius: 5px;
+  background-color: #fdfbff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  height: fit-content;
+}
+
+.box .perks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box .perks-header img {
+  width: 80px;
+  height: 80px;
+}
+
+.box .title {
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.box .description {
+  margin: 15px 0;
+  flex-grow: 1;
+}
+
+.ShowDetails {
+  display: flex;
+  justify-content: end;
+}
+
+.box .btn-container h2 {
+  color: #6674a9;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0;
+  justify-content: end;
+}
+.box .btn-container h2:hover {
+  background-color: rgb(213, 227, 228);
+}
+
+@media only screen and (max-width: 1300px){
+  .Perks-content .box{
+    width: 100%;
+
+  }
+}
+@media only screen and (max-width: 500px){
+  .FilterPerks h2 {
+   display: none;
+  }
+  .box .title {
+    font-size: 13px;
+  }
+  .box .perks-header img {
+    width: 50px;
+    height: 50px;
+  }
+  .ShowDetails {
+   font-size: 13px;
+  }
+  .FilterPerks .FilterButton{
+    padding: 1px 10px;
+    font-weight: 600;
+
+  }
+}

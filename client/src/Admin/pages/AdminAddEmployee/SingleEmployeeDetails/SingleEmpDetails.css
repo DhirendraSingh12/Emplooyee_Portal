@@ -1,0 +1,144 @@
+.work-personal-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%; /* Set full height for layout container */
+    padding: 20px;
+}
+
+.work-left-personal-container{
+    width: 32%;
+    display: block; /* Ensure left container elements are block level */
+    height: 100%; /* Full height */
+    background-color: lavender;
+}
+
+.header-personal-work-left{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+    padding-right: 15px;
+}
+
+.additional-work-left-container{
+    padding: 9px;
+}
+
+.personal-work-right-container{
+    width: 65%;
+    display: block; /* Ensure right container elements are block level */
+    height: 100%; /* Full height */
+}
+
+.employee-work-details-form-container{
+    height: 100%; /* Set the form container's height to 100% */
+    padding: 10px;
+    background-color: lavender !important;
+    overflow: hidden; /* Hide overflow from the container */
+    display: block; /* Make form container block-level */
+}
+
+.employee-work-details-form{
+    height: 100%; /* Full height for form elements */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 15px; /* Add padding for smooth scroll */
+    display: block; /* Ensure form elements are block-level */
+    padding: 9px;
+}
+
+.search-place-for-work{
+    padding-left: 5px;
+    margin-top: 25px;
+}
+
+.location-of-work{
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.both-full-part-time-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px;
+}
+
+.both-full-part-time-second-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 9px;
+}
+
+.left-radio-container,
+.right-radio-container {
+    width: 48%; /* Adjust width to fit both containers in one row */
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.second-left-radio-container,
+.second-right-radio-container{
+    width: 48%; /* Adjust width to fit both containers in one row */
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.left-radio-container:focus-within,
+.right-radio-container:focus-within {
+    border-color: #1976d2; /* This is the border color when focused (you can adjust the color) */
+}
+.second-left-radio-container:focus-within,
+.second-right-radio-container:focus-within {
+    border-color: #1976d2; /* This is the border color when focused (you can adjust the color) */
+}
+
+
+
+
+.full-time-part-time-work{
+    background-color: rgba(209, 203, 242, 0.816);
+    padding: 9px;
+    border-radius: 5px;
+}
+
+.multi-header-employment-details{
+    display: flex;
+    color: rgba(88, 80, 130);
+    background-color: lavender;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.multi-header-employment-details p:first-child{
+    background-color: rgba(235, 247, 255);
+    padding: 6px 0px 6px 0px;
+    padding-left: 12px;
+    padding-right: 23px;
+    border-radius: 0px 20px 20px 0px;
+    font-weight: 600;
+}
+
+.multi-header-employment-details p:nth-child(3) {
+  background-color: rgba(235, 247, 255);
+  padding: 6px 0px 6px 0px;
+  padding-left: 12px;
+  padding-right: 23px;
+  border-radius: 0px 20px 20px 0px;
+  font-weight: 600;
+}
+
+.multi-header-employment-details p:nth-child(2){
+    background-color: rgba(88, 80, 130, 1);
+    color: white;
+    padding: 6px 0px 6px 0px;
+    padding-left: 12px;
+    padding-right: 23px;
+    border-radius: 0px 20px 20px 0px;
+    font-weight: 600;
+}

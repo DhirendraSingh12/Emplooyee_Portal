@@ -1,0 +1,49 @@
+.schedule-container {
+  padding: 20px 20px 10px 20px;
+  background: rgb(255, 255, 255); 
+  height: 32%;
+} 
+.dropdowns {
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.TotalReported{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Schedule-submit{
+  width: 333px;
+  text-align: center;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #6674a9;
+}
+.indicators p{
+  border: 1px solid black;
+  padding: 8px;
+
+}
+@media only screen and (max-width: 800px) {
+  .dropdowns{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .TotalReported{
+    gap: 20px;
+  }
+  .TotalReported .Schedule-submit{
+    width: 100%;
+  }
+  .indicators {
+    width: 100%;
+    text-align: center;
+  }
+
+}

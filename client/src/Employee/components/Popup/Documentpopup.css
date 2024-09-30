@@ -1,0 +1,120 @@
+/* Popup Overlay */
+.doc-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.doc-popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+/* Popup Header */
+.doc-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.doc-popup-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Close Button */
+.doc-close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s;
+}
+
+.doc-close-button:hover {
+    color: #333;
+}
+
+/* Popup Body */
+.doc-popup-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form Group */
+.doc-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.doc-form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.doc-form-group input[type="text"],
+.doc-form-group input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Form Actions */
+.doc-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Upload Button */
+.doc-upload-button {
+    background-color: #90caf9;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.doc-upload-button:hover {
+    background-color: #0056b3;
+}
+
+/* Close Button in Actions */
+.doc-close-button {
+    background: whitesmoke;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.doc-close-button:hover {
+    background-color: #e2e6ea;
+    color: red;
+}

@@ -1,0 +1,54 @@
+
+.document-page-container {
+    padding: 20px;
+  }
+  
+  .document-actions {
+    margin-top: 20px;
+  }
+  
+  .document-file iframe {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  /* DocumentPage.css */
+
+.document-page-container {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background for better contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: auto; /* Center the container */
+}
+
+h2 {
+  color: #333; /* Darker text for headings */
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555; /* Slightly lighter text for paragraph */
+  margin: 5px 0; /* Spacing between paragraphs */
+}
+
+.document-file {
+  margin: 20px 0; /* Space around the document file preview */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+}
+
+.document-file iframe {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for the iframe */
+}
+
+.document-file img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for images */
+}
+
+

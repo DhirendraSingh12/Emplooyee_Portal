@@ -1,0 +1,100 @@
+.dropzone.dragging {
+    border-color: #000;
+  }
+  
+  .upload-icon {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .dropzone p {
+    margin: 10px 0;
+  }
+  
+  .dropzone button {
+    margin-top: 10px;
+  }
+  
+  .dropzone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    margin-top: 10px;
+    width: 500px;
+  }
+  
+  .dropzone.dragging {
+    background-color: #e0e0e0;
+  }
+  
+  .dropzone .uploadfilebutton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(25, 164, 134);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .dropzone .uploadfilebutton input[type="file"] {
+    display: none;
+  }
+  
+  .dropzone p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    padding: 10px;
+  }
+  
+  .dropzone .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-button-employee {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .cancel-button-employee {
+    background: whitesmoke;
+    color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .save-button-employee {
+    background: #90caf9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .UploadBulkImployess{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding-right: 20px; 
+ }
+ .UploadIconBulk{
+  font-size: 35px;
+  cursor: pointer;
+ }
